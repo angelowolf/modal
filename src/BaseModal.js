@@ -1,4 +1,3 @@
-
 export default {
 
   props: {
@@ -35,8 +34,7 @@ export default {
     },
 
     deactive () {
-      if(this.closable)
-        this.show = false
+      this.show = false
     }
   },
 
