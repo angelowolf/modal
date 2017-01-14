@@ -9,12 +9,12 @@
     @beforeEnter="beforeEnter"
     @afterLeave="afterLeave"
   >
-    <div :class="classes" v-if="show">
-      <div class="modal-background" @click="deactive"></div>
+    <div :class="classes" v-show="show">
+      <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
           <p class="modal-card-title">{{ title }}</p>
-          <button class="delete" @click="deactive"></button>
+          <button class="delete" @click="cancel"></button>
         </header>
         <section class="modal-card-body">
           <slot></slot>
